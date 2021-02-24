@@ -37,6 +37,14 @@ function staticLoadPlaces() {
                 lng: -111.85974962730612
             }
        },
+          <!-- Riverside Park --> 
+       {
+            name: 'Magnemite',
+            location: {
+                lat: 40.2421777799449,
+                lng: -111.6810686632882
+            }
+       },
     ];
 }
 
