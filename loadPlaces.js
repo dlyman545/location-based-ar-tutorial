@@ -57,14 +57,20 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        <!---->
-        model.setAttribute('gltf-model', './assets/chests/chest.gltf');
-         --> <!--
-         model.setAttribute('gltf-model', './assets/Orca.gltf');
-         -->
-        model.setAttribute('rotation', '0 180 0');
-        model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '0.5 0.5 0.5');
+        switch (0) {
+             case 0:
+                  model.setAttribute('gltf-model', './assets/chests/chest.gltf');
+                  model.setAttribute('rotation', '0 180 0');
+                  model.setAttribute('animation-mixer', '');
+                  model.setAttribute('scale', '0.5 0.5 0.5');
+                  break;
+             case 1:
+                  model.setAttribute('gltf-model', './assets/Orca.gltf');
+                  model.setAttribute('rotation', '0 180 0');
+                  model.setAttribute('animation-mixer', '');
+                  model.setAttribute('scale', '0.5 0.5 0.5');
+                  break;
+        }
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
