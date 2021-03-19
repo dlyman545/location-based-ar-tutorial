@@ -44,7 +44,7 @@ function staticLoadPlaces() {
                 lat: 40.2421777799449,
                 lng: -111.6810686632882
             }
-       }
+       },
           <!-- Fat Daddies --> 
        {
             name: 'Chest',
@@ -52,7 +52,7 @@ function staticLoadPlaces() {
                 lat: 40.2335839917622,
                 lng: -111.66269110571845
             }
-       },
+       }
     ];
 }
 
