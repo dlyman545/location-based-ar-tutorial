@@ -65,7 +65,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        switch (1) {
+        switch (0) {
              <!-- Chest --> 
              case 0:
                   model.setAttribute('gltf-model', './assets/chests/chest.gltf');
