@@ -45,14 +45,14 @@ function staticLoadPlaces() {
                 lng: -111.6810686632882
             }
        }
-          <!-- Riverside Park --> 
+          <!-- Fat Daddies --> 
        {
             name: 'Chest',
             location: {
                 lat: 40.2335839917622,
                 lng: -111.66269110571845
             }
-       }
+       },
     ];
 }
 
