@@ -14,6 +14,14 @@ function staticLoadPlaces() {
                 lng: -111.894800
             }
        },
+         <!-- Aliz -->
+       {
+            name: 'Chest',
+            location: {
+                lat: 40.75627184735022,
+                lng: -73.9917137018502
+            }
+       },
           <!-- Danp --> 
        {
             name: 'Chest',
