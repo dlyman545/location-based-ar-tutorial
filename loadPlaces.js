@@ -4,16 +4,8 @@ window.onload = () => {
 };
 
 function staticLoadPlaces() {
-
-     return [    
-         <!-- Current -->
-       {
-            name: 'Chest',
-            location: {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            }
-       },  
+     navigator.geolocation.getCurrentLocation(function(position)); 
+     return [ 
          <!-- Orca -->
        {
             name: 'Chest',
