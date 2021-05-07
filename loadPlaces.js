@@ -1,11 +1,20 @@
 window.onload = () => {
      let places = staticLoadPlaces();
-     navigator.geolocation.getCurrentLocation(consile.log, console.log);
      renderPlaces(places);
 };
 
 function staticLoadPlaces() {
+     navigator.geolocation.getCurrentLocation(function(position));
      return [
+         <!-- Current -->
+       {
+            name: 'Chest',
+            location: {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            }
+       },                                  
+                                     
          <!-- Orca -->
        {
             name: 'Chest',
