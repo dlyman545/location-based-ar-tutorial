@@ -5,7 +5,15 @@ window.onload = () => {
 
 function staticLoadPlaces() {
 
-     return [                                                   
+     return [    
+         <!-- Current -->
+       {
+            name: 'Chest',
+            location: {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            }
+       },  
          <!-- Orca -->
        {
             name: 'Chest',
