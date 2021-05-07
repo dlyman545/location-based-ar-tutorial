@@ -1,5 +1,6 @@
 window.onload = () => {
      let places = staticLoadPlaces();
+     navigator.geolocation.getCurrentLocation(consile.log, console.log);
      renderPlaces(places);
 };
 
