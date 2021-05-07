@@ -13,8 +13,7 @@ function staticLoadPlaces() {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
             }
-       },                                  
-                                     
+       },                                                           
          <!-- Orca -->
        {
             name: 'Chest',
