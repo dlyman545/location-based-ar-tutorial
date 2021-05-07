@@ -4,7 +4,7 @@ window.onload = () => {
 };
 
 function staticLoadPlaces() {
-     navigator.geolocation.getCurrentLocation(function(position)); 
+     <!-- navigator.geolocation.getCurrentLocation(function(position)); -->
      return [ 
          <!-- Orca -->
        {
