@@ -20,6 +20,19 @@
 
 
 <body style='margin: 0; overflow: hidden;'>
+	<!-- Get Location -->
+	if (navigator.geolocation) {
+        	navigator.geolocation.getCurrentPosition(showPosition);
+    	} 
+	else {
+        	alert("Geolocation is not supported by this browser.");
+     	}
+	
+	<!-- Display Location -->
+	function showPosition(position) {
+    		console.log("Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude); 
+	}
+	
    	 <a-scene
       	 	vr-mode-ui="enabled: false"
 			embedded
