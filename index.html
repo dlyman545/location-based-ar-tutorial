@@ -20,35 +20,25 @@
 
 
 <body style='margin: 0; overflow: hidden;'>
-	<script>
-		if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(showPosition);
-	    	} else {
-			alert("Geolocation is not supported by this browser.");
-	     	}
-		
-		function showPosition(position) {
-    			console.log("Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude); 
-		}
-	</script>
-	
-<!--
-	<script>
-		var x = document.getElementById("demo");
-		function getLocation() {
-		  if (navigator.geolocation) {
-		    navigator.geolocation.getCurrentPosition(showPosition);
-		  } else {
-		    x.innerHTML = "Geolocation is not supported by this browser.";
-		  }
-		}
+	<h1>Find your Current location</h1>  
+	<button onclick="getlocation()">Click me</button>  
+	<div id="location"></div>  
+	<script>  
+	    var x= document.getElementById("location");  
+	    function getlocation() {  
+		if(navigator.geolocation){  
+		    navigator.geolocation.getCurrentPosition(showPosition)  
+		  }  
+		else  
+		{  
+		     alert("Sorry! your browser is not supporting")  
+		 } }  
 
-		function showPosition(position) {
-		  x.innerHTML = "Latitude: " + position.coords.latitude +
-		  "<br>Longitude: " + position.coords.longitude;
-		}
+	     function showPosition(position){  
+	       var x = "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  
+			document.getElementById("location").innerHTML = x;  
+	     }  
 	</script>
--->
 	
    	<a-scene
       	 	vr-mode-ui="enabled: false"
