@@ -20,8 +20,19 @@
 
 
 <body style='margin: 0; overflow: hidden;'>
-	
-	 <script>
+	<script>
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+	    	} else {
+			alert("Geolocation is not supported by this browser.");
+	     	}
+		
+		function showPosition(position) {
+    			console.log("Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude); 
+		}
+	</script>
+<!--
+	<script>
 		var x = document.getElementById("demo");
 		function getLocation() {
 		  if (navigator.geolocation) {
@@ -35,7 +46,7 @@
 		  x.innerHTML = "Latitude: " + position.coords.latitude +
 		  "<br>Longitude: " + position.coords.longitude;
 		}
-	</script> 
+	</script>
 	
 	<!--
    	<a-scene
