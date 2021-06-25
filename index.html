@@ -20,20 +20,6 @@
 
 
 <body style='margin: 0; overflow: hidden;'>
-	<!--
-	<!-- Get Location -->
-	if (navigator.geolocation) {
-        	navigator.geolocation.getCurrentPosition(showPosition);
-    	} 
-	else {
-        	alert("Geolocation is not supported by this browser.");
-     	}
-	
-	<!-- Display Location -->
-	function showPosition(position) {
-    		console.log("Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude); 
-	}
-	-->
 	
 	 <script>
 		var x = document.getElementById("demo");
@@ -51,7 +37,8 @@
 		}
 	</script> 
 	
-   	 <a-scene
+	<!--
+   	<a-scene
       	 	vr-mode-ui="enabled: false"
 			embedded
        		arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
