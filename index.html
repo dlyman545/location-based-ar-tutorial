@@ -20,27 +20,7 @@
 
 
 <body style='margin: 0; overflow: hidden;'> 
-	<script>  
-	    var x= document.getElementById("location");  
-	    function getlocation() {  
-		if(navigator.geolocation){  
-		    navigator.geolocation.getCurrentPosition(showPosition)  
-		  }  
-		else  
-		{  
-		     alert("Sorry! your browser is not supporting")  
-		 } }  
-
-	     function showPosition(position){  
-	       var x = "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  
-			document.getElementById("location").innerHTML = x;  
-	     }  
-	</script>
-	<h1>Find your Current location</h1>  
-	<button onclick="getlocation()">Click me</button>  
-	<div id="location"></div> 
-	
-<!--
+	]
    	<a-scene
       	 	vr-mode-ui="enabled: false"
 			embedded
@@ -49,8 +29,7 @@
 	<a-camera gps-camera rotation-reader></a-camera>
 	
 	<!-- Load static model -->
-<!--
-	<a-entity gltf-model="./assets/chests/chest.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 40.570599; latitude: -111.894863;" animation-mixer/>
+	<!-- <a-entity gltf-model="./assets/chests/chest.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 40.570599; latitude: -111.894863;" animation-mixer/> -->
 	</a-scene>
 -->
 </body>
