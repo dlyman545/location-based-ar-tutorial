@@ -5,7 +5,7 @@ window.onload = () => {
 
 function staticLoadPlaces() {
      if(navigator.geolocation){  
-		navigator.geolocation.getCurrentPosition(showPosition)  
+		navigator.geolocation.getCurrentPosition()  
 	}  
 	else{  
           alert("Sorry! your browser is not supporting")  
