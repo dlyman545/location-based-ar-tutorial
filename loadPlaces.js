@@ -4,7 +4,51 @@ window.onload = () => {
 };
 
 function staticLoadPlaces() {
+     if(navigator.geolocation){  
+		navigator.geolocation.getCurrentPosition(showPosition)  
+	}  
+	else{  
+          alert("Sorry! your browser is not supporting")  
+     }
+
+/* "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  */
      return [
+       {
+            name: 'Chest Rn 1',
+            location: {
+                lat: (position.coords.latitude + (Math.random() * (0.25 - -0.25) + 0.25))
+                lng: (position.coords.longitude + (Math.random() * (0.25 - -0.25) + 0.25))
+            }
+       },
+       {
+            name: 'Chest Rn 2',
+            location: {
+                lat: (position.coords.latitude + (Math.random() * (0.25 - -0.25) + 0.25))
+                lng: (position.coords.longitude + (Math.random() * (0.25 - -0.25) + 0.25))
+            }
+       },
+       {
+            name: 'Chest Rn 3',
+            location: {
+                lat: (position.coords.latitude + (Math.random() * (0.25 - -0.25) + 0.25))
+                lng: (position.coords.longitude + (Math.random() * (0.25 - -0.25) + 0.25))
+            }
+       },
+       {
+            name: 'Chest Rn 4',
+            location: {
+                lat: (position.coords.latitude + (Math.random() * (0.25 - -0.25) + 0.25))
+                lng: (position.coords.longitude + (Math.random() * (0.25 - -0.25) + 0.25))
+            }
+       },
+       {
+            name: 'Chest Rn 5',
+            location: {
+                lat: (position.coords.latitude + (Math.random() * (0.25 - -0.25) + 0.25))
+                lng: (position.coords.longitude + (Math.random() * (0.25 - -0.25) + 0.25))
+            }
+       },
+
          <!-- Orca -->
        {
             name: 'Chest',
