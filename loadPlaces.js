@@ -1,20 +1,25 @@
-window.onload = () => { 
-	/*navigator.geolocation.getCurrentPosition();*/
-	
-	let places = staticLoadPlaces();
-	renderPlaces(places);
+window.onload = () => {
+     let places = staticLoadPlaces();
+     renderPlaces(places);
 };
 
 function staticLoadPlaces() {
-
-/* "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  */
-     return [
+     <!-- navigator.geolocation.getCurrentLocation(function(position)); -->
+     return [ 
          <!-- Orca -->
        {
             name: 'Chest',
             location: {
                 lat: 40.570595,
                 lng: -111.894800
+            }
+       },
+         <!-- Aliz -->
+       {
+            name: 'Chest',
+            location: {
+                lat: 40.75627184735022,
+                lng: -73.9917137018502
             }
        },
           <!-- Danp --> 
