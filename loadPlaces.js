@@ -1,13 +1,13 @@
 window.onload = () => {
-     let places = staticLoadPlaces();
 	if(navigator.geolocation){  
 		navigator.geolocation.getCurrentPosition()  
 	}  
 	else{  
-          alert("Sorry! your browser is not supporting")  
-     }
-     renderPlaces(places);
-
+        	alert("Sorry! your browser is not supporting")  
+     	}
+	
+	let places = staticLoadPlaces();
+	renderPlaces(places);
 };
 
 function staticLoadPlaces() {
