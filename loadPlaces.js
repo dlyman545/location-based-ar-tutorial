@@ -14,13 +14,6 @@ function staticLoadPlaces() {
 
 /* "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  */
      return [
-       {
-            name: 'Chest Rn 1',
-            location: {
-                lat: position.coords.latitude
-                lng: position.coords.longitude
-            }
-       },
          <!-- Orca -->
        {
             name: 'Chest',
