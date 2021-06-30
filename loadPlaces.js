@@ -1,10 +1,5 @@
-window.onload = () => {
-	if(navigator.geolocation){  
-		navigator.geolocation.getCurrentPosition()  
-	}  
-	else{  
-        	alert("Sorry! your browser is not supporting")  
-     	}
+window.onload = () => { 
+	navigator.geolocation.getCurrentPosition()  
 	
 	let places = staticLoadPlaces();
 	renderPlaces(places);
