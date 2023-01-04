@@ -5,6 +5,16 @@ window.onload = () => {
             var longitude = position.coords.longitude;
             document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
             });
+            
+            // Create an empty array to store the coordinates
+            var coordinates = [];
+
+            // Generate three random coordinates within 100 feet
+            for (var i = 0; i < 3; i++) {
+                  var newLatitude = latitude + (Math.random() - 0.5) * 0.001;
+                  var newLongitude = longitude + (Math.random() - 0.5) * 0.001;
+                  coordinates.push({lat: newLatitude, lng: newLongitude});
+            }
      }
      else {
            document.write("Geolocation is not supported by this browser.");
@@ -15,9 +25,28 @@ window.onload = () => {
 };
 
 function staticLoadPlaces() {
-     <!-- navigator.geolocation.getCurrentLocation(function(position)); -->
-          
-     return [ 
+     return [
+         <!-- Nearby 1 -->
+       {
+            name: 'Chest',
+            location: {
+                coordinates[0];
+            }
+       },
+         <!-- Nearby 2 -->
+       {
+            name: 'Chest',
+            location: {
+                coordinates[1];
+            }
+       },
+         <!-- Nearby 3 -->
+       {
+            name: 'Chest',
+            location: {
+                coordinates[2];
+            }
+       },
          <!-- Orca -->
        {
             name: 'Chest',
