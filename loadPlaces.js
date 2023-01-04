@@ -1,11 +1,15 @@
 window.onload = () => {
       if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-          var latitude = position.coords.latitude;
-          var longitude = position.coords.longitude;
-          document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
-     });
-           
+            navigator.geolocation.getCurrentPosition(function(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
+            });
+     }
+     else {
+           document.write("Geolocation is not supported by this browser.");
+     }
+            
      let places = staticLoadPlaces();
      renderPlaces(places);
 };
