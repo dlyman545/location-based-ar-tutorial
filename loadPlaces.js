@@ -4,27 +4,11 @@ window.onload = () => {
                   var latitude = position.coords.latitude;
                   var longitude = position.coords.longitude;
                   document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
-
-                  // Create an empty array to store the coordinates
-                  var coordinates = [];
-
-                  // Generate three random coordinates within 100 feet
-                  for (var i = 0; i < 3; i++) {
-                        var newLatitude = latitude + (Math.random() - 0.5) * 0.001;
-                        var newLongitude = longitude + (Math.random() - 0.5) * 0.001;
-                        coordinates.push({lat: newLatitude, lng: newLongitude});
-                  }
-
-                  // Display the coordinates
-                  <!-- for (var i = 0; i < coordinates.length; i++) {
-                        document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
-                  } -->
             });
-      }
+      }     
       else {
             document.write("Geolocation is not supported by this browser.");
       }
-
             
      let places = staticLoadPlaces();
      renderPlaces(places);
