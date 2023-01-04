@@ -1,10 +1,18 @@
 window.onload = () => {
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
+     });
+           
      let places = staticLoadPlaces();
      renderPlaces(places);
 };
 
 function staticLoadPlaces() {
      <!-- navigator.geolocation.getCurrentLocation(function(position)); -->
+          
      return [ 
          <!-- Orca -->
        {
