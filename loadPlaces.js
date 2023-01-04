@@ -1,7 +1,4 @@
 window.onload = () => {
-      //var latitude;
-      //var longitude;
-      
       if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
                   var latitude = position.coords.latitude;
@@ -19,10 +16,6 @@ window.onload = () => {
                         document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
                   }
             });
-            
-            //for (var i = 0; i < coordinates.length; i++) {
-                  //document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
-            //}
       }
       
       else {
