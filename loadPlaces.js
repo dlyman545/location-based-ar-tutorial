@@ -3,7 +3,7 @@ window.onload = () => {
             navigator.geolocation.getCurrentPosition(function(position) {
                   var latitude = position.coords.latitude;
                   var longitude = position.coords.longitude;
-                  document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
+                  //document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
             });
             // Create an empty array to store the coordinates
             var coordinates = [];
