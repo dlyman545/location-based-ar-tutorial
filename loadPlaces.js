@@ -15,9 +15,12 @@ window.onload = () => {
                   coordinates.push({lat: newLatitude, lng: newLongitude});
             }
             
-            for (var i = 0; i < coordinates.length; i++) {
-                  document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
-            }
+            document.write("Latitude: " + coordinates[0].lat + "<br>Longitude: " + coordinates[0].lng);
+            document.write("Latitude: " + coordinates[1].lat + "<br>Longitude: " + coordinates[1].lng);
+            document.write("Latitude: " + coordinates[2].lat + "<br>Longitude: " + coordinates[2].lng);
+            //for (var i = 0; i < coordinates.length; i++) {
+                  //document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
+            //}
       }
       
       else {
