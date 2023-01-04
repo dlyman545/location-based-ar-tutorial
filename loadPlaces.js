@@ -17,7 +17,8 @@ window.onload = () => {
 function staticLoadPlaces() {
      return [
          <!-- Nearby 1 -->
-       <!--{
+       <!--
+       {
             name: 'Chest',
             location: {
                 coordinates[0];
@@ -36,7 +37,8 @@ function staticLoadPlaces() {
             location: {
                 coordinates[2];
             }
-       },-->
+       },
+             -->
          <!-- Orca -->
        {
             name: 'Chest',
