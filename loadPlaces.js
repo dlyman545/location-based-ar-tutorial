@@ -1,13 +1,16 @@
 window.onload = () => {
-      var latitude;
-      var longitude;
+      //var latitude;
+      //var longitude;
       
       if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
-                  latitude = position.coords.latitude;
-                  longitude = position.coords.longitude;
+                  var latitude = position.coords.latitude;
+                  var longitude = position.coords.longitude;
                   //document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
             });
+            
+            document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
+            
             // Create an empty array to store the coordinates
             var coordinates = [];
 
