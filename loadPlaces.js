@@ -16,28 +16,6 @@ window.onload = () => {
 
 function staticLoadPlaces() {
      return [
-         <!-- Nearby 1 -->
-       //<!--
-       //{
-        //    name: 'Chest',
-        //    location: {
-        //        coordinates[0];
-       //     }
-       //},
-       //  <!-- Nearby 2 -->
-       //{
-         //   name: 'Chest',
-         //   location: {
-         //       coordinates[1];
-        //    }
-       //},
-       //  <!-- Nearby 3 -->
-      // {
-       //     name: 'Chest',
-        //    location: {
-         //       coordinates[2];
-        //    }
-       //},
          <!-- Orca -->
        {
             name: 'Chest',
