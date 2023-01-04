@@ -14,7 +14,12 @@ window.onload = () => {
                   var newLongitude = longitude + (Math.random() - 0.5) * 0.001;
                   coordinates.push({lat: newLatitude, lng: newLongitude});
             }
-      }     
+            
+            for (var i = 0; i < coordinates.length; i++) {
+                  document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
+            }
+      }
+      
       else {
             document.write("Geolocation is not supported by this browser.");
       }
