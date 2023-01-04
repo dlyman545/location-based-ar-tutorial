@@ -1,9 +1,9 @@
 window.onload = () => {
       if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
-            var latitude = position.coords.latitude;
-            var longitude = position.coords.longitude;
-            <!-- document.write("Latitude: " + latitude + "<br>Longitude: " + longitude); -->
+                  var latitude = position.coords.latitude;
+                  var longitude = position.coords.longitude;
+                  // document.write("Latitude: " + latitude + "<br>Longitude: " + longitude);
             });
             
             // Create an empty array to store the coordinates
@@ -16,17 +16,15 @@ window.onload = () => {
                   coordinates.push({lat: newLatitude, lng: newLongitude});
             }
       }
+  });
+
       // Display the coordinates
       for (var i = 0; i < coordinates.length; i++) {
             var div = document.createElement("div");
             div.style.color = "white";
             div.innerHTML = "Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>";
             document.body.appendChild(div);
-      }
-  });
-} else {
-  document.write("Geolocation is not supported by this browser.");
-}
+     }
      else {
            document.write("Geolocation is not supported by this browser.");
      }
