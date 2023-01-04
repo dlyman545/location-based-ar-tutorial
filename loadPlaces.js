@@ -13,11 +13,9 @@ window.onload = () => {
                   var newLatitude = latitude + (Math.random() - 0.5) * 0.001;
                   var newLongitude = longitude + (Math.random() - 0.5) * 0.001;
                   coordinates.push({lat: newLatitude, lng: newLongitude});
+                  document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
             }
             
-            document.write("Latitude: " + coordinates[0].lat + "<br>Longitude: " + coordinates[0].lng);
-            document.write("Latitude: " + coordinates[1].lat + "<br>Longitude: " + coordinates[1].lng);
-            document.write("Latitude: " + coordinates[2].lat + "<br>Longitude: " + coordinates[2].lng);
             //for (var i = 0; i < coordinates.length; i++) {
                   //document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
             //}
