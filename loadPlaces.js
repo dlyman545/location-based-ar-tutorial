@@ -16,9 +16,9 @@ window.onload = () => {
                   }
 
                   // Display the coordinates
-                  for (var i = 0; i < coordinates.length; i++) {
+                  <!-- for (var i = 0; i < coordinates.length; i++) {
                         document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
-                  }
+                  } -->
             });
       }
       else {
