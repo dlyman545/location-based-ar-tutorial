@@ -131,14 +131,14 @@ function renderPlaces(places) {
                   model.setAttribute('gltf-model', './assets/chests/chest.gltf');
                   model.setAttribute('rotation', '0 180 0');
                   model.setAttribute('animation-mixer', '');
-                  model.setAttribute('scale', '0.5 0.5 0.5');
+                  model.setAttribute('scale', '0.2 0.2 0.2');
                   break;
              <!-- Orca --> 
              case 1:
                   model.setAttribute('gltf-model', './assets/Orca.gltf');
                   model.setAttribute('rotation', '0 180 0');
                   model.setAttribute('animation-mixer', '');
-                  model.setAttribute('scale', '0.5 0.5 0.5');
+                  model.setAttribute('scale', '0.2 0.2 0.2');
                   break;
         }
 
