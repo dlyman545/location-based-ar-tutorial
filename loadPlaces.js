@@ -13,7 +13,7 @@ window.onload = () => {
                         var newLatitude = latitude + (Math.random() - 0.5) * 0.001;
                         var newLongitude = longitude + (Math.random() - 0.5) * 0.001;
                         coordinates.push({lat: newLatitude, lng: newLongitude});
-                        document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>");
+                        <!-- document.write("Latitude: " + coordinates[i].lat + "<br>Longitude: " + coordinates[i].lng + "<br><br>"); -->
                   }
             });
       }
@@ -25,6 +25,35 @@ window.onload = () => {
      let places = staticLoadPlaces();
      renderPlaces(places);
 };
+
+function dynamicLoadPlaces() {
+     return [
+         <!-- 0 -->
+       {
+            name: 'Chest',
+            location: {
+                lat: coordinates[0].lat,
+                lng: coordinates[0].lng
+            }
+       },
+         <!-- 1 -->
+       {
+            name: 'Chest',
+            location: {
+                lat: coordinates[1].lat,
+                lng: coordinates[1].lng
+            }
+       },
+          <!-- 2 --> 
+       {
+            name: 'Chest',
+            location: {
+                lat: coordinates[2].lat,
+                lng: coordinates[2].lng
+            }
+       }
+    ];
+}
 
 function staticLoadPlaces() {
      return [
