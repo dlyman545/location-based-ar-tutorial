@@ -22,8 +22,8 @@ window.onload = () => {
             document.write("Geolocation is not supported by this browser.");
       }
             
-      let places = staticLoadPlaces(); 
-     <!-- let places = dynamicLoadPlaces(); -->
+     <!-- let places = staticLoadPlaces(); -->
+      let places = dynamicLoadPlaces();
      renderPlaces(places);
 };
 
@@ -125,7 +125,7 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', 'latitude: ${latitude}; longitude: ${longitude};');
+        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         switch (0) {
              <!-- Chest --> 
              case 0:
