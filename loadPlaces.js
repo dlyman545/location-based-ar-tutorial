@@ -114,6 +114,14 @@ function staticLoadPlaces() {
                 lng: -111.66269110571845
             }
        }
+          <!-- Cinemark SF --> 
+       {
+            name: 'Chest',
+            location: {
+                lat: 40.166386185005955,
+                lng: -111.56972416085496
+            }
+       }
     ];
 }
 
