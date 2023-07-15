@@ -22,8 +22,8 @@ window.onload = () => {
             document.write("Geolocation is not supported by this browser.");
       }
             
-     <!-- let places = staticLoadPlaces(); -->
-      let places = dynamicLoadPlaces();
+      let places = staticLoadPlaces(); -->
+     <!-- let places = dynamicLoadPlaces(); -->
      renderPlaces(places);
 };
 
