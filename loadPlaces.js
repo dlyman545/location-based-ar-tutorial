@@ -126,7 +126,8 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('background', 'white');
+        model.background.setAttribute('color', 'white');
+        model.background.setAttribute('transparent', 'false');
         switch (0) {
              <!-- Chest --> 
              case 0:
